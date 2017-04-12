@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Dokumentace</title>
+  </head>
+  <body>
+  <header>
+    <h1>Dokumentace konfigurace 3D akční PC hry</h1>
+ 
+  </header>
+  <main>
+    <article>
+  	 <h2>obsah:</h2>
+     <nav>
+  	 <ol>
+  		<li><a href="#uvod">Úvod</a></li>
+  		<li><a href="#metodika">Metodika</a></li>
+      <li><a href="#popis_elementu_a_atributu">Pipis elementů a atributů</a>
+        <ul>
+				  <li><a href="#elementy">Elementy</a></li>
+		      <li><a href="#atributy">Atributy</a></li>  				
+  			</ul>
+      </li>
+      <li><a href="#popis_transformace">Popis transformace</a></li>
+      <li><a href="#zaver">Závěr</a></li>
+  	 </ol>
+     </nav>
+    
+  	 <section> 
+      <h2><a id="uvod">Úvod</a></h2>
+      <p>Tento projekt popisuje konfiguraci nastavení 3D akční počítačové hry. Umožňuje nakonfigurovat<br>
+       ruzné parametry aplikace jako Video, Audio, Ovladani, Online nastavení a ostatní nastavení. Uživatel<br>
+       si pak může nastavit aplikaci přesně podle svých představ<br>
+      </p>
+  	 </section>
+      <section>
+  		<h2><a id="metodika">Metodika</a></h2>
+  	 </section>
+     
+      <section>
+  		<h2><a id="popis_elementu_a_atributu">Popis elementů a atributů</a></h2>
+        <p>Tato sekce se věnuje popsání a vysvětlení jednotlivých elementů a atributů.</p>
+        <section>
+  		    <h2><a id="elementy">Elementy</a></h2>
+          <p>
+          Video - popisuje základní nastavení video parametrů. Obsahuje nastavení rozlišení, display mode,<br>
+          snímkové frekvence, stínů,jasu, kvality textur, hloubky ostrosti, přiblížení kamery, MSAA a VSYNC.<br><br>
+          Audio - popisuje základní nastavení audio parametrů a titulků. Obsahuje nastavení hlasitosti aplikace,<br>
+          hlasitosti dialogu, hlasitosti hudby a nastavení titulků.<br><br>
+          Ovládání - popisuje základní nastavení ovládacích příkazů a ovládacího zařízení. Obsahuje nastavení citlivosti myši,<br>
+          invertace myši, vibrací. Dále pak obsahuje dvě sekce - Pohyb a Akce. V sekci Pohyb je nastavení pohybových akcí<br>
+          vůči ovládacímu zařízení jako pohyb dopředu, pohyb dozadu, pohyb doprava, pohyb doleva, výskok, kleknutí, lehnutí a sprint.<br>
+          V sekci Akce je nastavení událostí jako střelba, zaostření, přepínání výbavy, použití nože, reload, pouzití dalekohledu<br>
+          a zobrazení mapy<br><br>
+          Ostatní - Obsahuje nastavení obtiznosti, zobrazení nebo vypnutí nápovědy, zapnutí nebo vypnutí radaru a povolení nebo<br>
+          zakázání automatického ukládání v průběhu hry.<br><br>
+          Online nastavení - Obsahuje základní nastaveni hráče (nick, jméno, příjmení, heslo, email) a nastavení zapnutí nebo vypnutí<br>
+          textového chatu a mikrofonu při online hraní. 
+           </p>
+          
+          <table border = "1">
+            <tr>
+  		          <td></td>
+                <td><b>Elementy</b></td>
+  	         </tr>
+  	          <tr>
+  		          <td>Grafické nastavení</td>
+                <td>Rozliseni, Display_mode, Kvalita_vykreslovani, Snimkova_frekvence,Stiny,<br>
+                 Jas, Kvalita_textur, Hloubka_ostrosti, Priblizeni_kamery, MSAA, VSYNC</td>
+  	         </tr>
+             <tr>
+  		          <td>Zvukové nastavení</td>
+                <td>Hlasitost_aplikace, Hlasitost_dialogu, Hlasitost_hudby, Titulky</td>
+  	         </tr>
+             <tr>
+  		          <td>Nastavení ovládání</td>
+                <td>Pohyb_dopredu, Pohyb_dozadu, Pohyb_doprava, Pohyb_doleva, Vyskok, Kleknuti,<br>
+                 Lehnuti, Sprint, Strelba, Zaostrit, Prepnuti_vybavy, Nuz, Reload, Zoom, Mapa,<br>
+                  Citlivost_mysi, Invertovat_mys, Vibrace</td>
+  	         </tr>
+             <tr>
+  		          <td>Ostatní nastavení</td>
+                <td>Obtiznost, Napoveda, Radar, Automaticke_ukladani</td>
+  	         </tr>
+             <tr>
+  		          <td>Online nastavení</td>
+                <td>Nick, Jmeno, Prijmeni, Heslo, Email, Text_chat, Mikrofon</td>
+  	         </tr>
+           </table>
+          
+         
+  	    </section>
+        
+        <section>
+  		    <h2><a id="atributy">Atributy</a></h2>
+            <p>Tabulka se seznamem atributů a jejich stručném popisu.</p>
+            <table border = "1">
+            <tr>
+  		          <td><b>Atributy</b></td>
+  		          <td><b>Stručný popis atributu</b></td>
+  	         </tr>
+  	          <tr>
+  		          <td>Jazyk</td>
+  		          <td>lokalizace aplikace</td>
+  	         </tr>
+             <tr>
+  		          <td>Titulky_jazyk</td>
+  		          <td>jazyk titulků</td>
+  	         </tr>
+             <tr>
+  		          <td>Ovladac</td>
+  		          <td>Druh ovládacího zařízení</td>
+  	         </tr>
+             <tr>
+  		          <td>Profil</td>
+  		          <td>Profil uloženého nastavení ovládání</td>
+  	         </tr>
+             <tr>
+  		          <td>Id</td>
+  		          <td>Id hráče</td>
+  	         </tr>
+             <tr>
+  		          <td>Zeme</td>
+  		          <td>Ze které země uživatel pochází</td>
+  	         </tr>
+            <tr>
+  		          <td>Status</td>
+  		          <td>Uživatelský status (online, neviditelný, offline...)</td>
+  	         </tr>
+             <tr>
+  		          <td>Uroven</td>
+  		          <td>Nejvyšší dosažená úroveň hráčem</td>
+  	         </tr>
+             <tr>
+  		          <td>Score</td>
+  		          <td>Celkové score</td>
+  	         </tr>
+             <tr>
+  		          <td>Odehraco_hodin</td>
+  		          <td>Celkový čas v hodinách strávený v aplikaci</td>
+  	         </tr>
+            </table>
+  	    </section>
+  	 </section>
+     <section>
+  		  <h2><a id="popis_transformace">Popis transformace</a></h2>
+        <p>Transformace do JSON</p>
+  	 </section>   
+     <section>
+  		  <h2><a id="zaver">Závěr</a></h2>
+        <p>Výsledkem tohoto projektu je konfigurace 3D akční PC hry.</p>
+  	 </section>
+     
+  </article>	
+  </main>    
+  <footer>
+  	<p>Značkovací jazyky, Martin Busch</p>
+  </footer>
+  </body>
+</html>
+
