@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Konfigurace Jazyk="CZ">
+  <Video>
+    <Rozliseni>1920x1080</Rozliseni>
+    <Display_mode>Fullscreen</Display_mode>
+    <Kvalita_vykreslovani>Vysoká</Kvalita_vykreslovani>
+    <Snimkova_frekvence>60</Snimkova_frekvence>
+    <Stiny>Zapnuto</Stiny>
+    <Jas>70</Jas>
+    <Kvalita_textur>Vysoká</Kvalita_textur>
+    <Hloubka_ostrosti>Ne</Hloubka_ostrosti>
+    <Priblizeni_kamery>6</Priblizeni_kamery>
+    <MSAA>4</MSAA>
+    <VSYNC>Ano</VSYNC>
+  </Video>
+  <Audio>
+    <Hlasitost_aplikace>50</Hlasitost_aplikace>
+    <Hlasitost_dialogu>50</Hlasitost_dialogu>
+    <Hlasitost_hudby>70</Hlasitost_hudby>
+    <Titulky>Zapnuto</Titulky>
+    <Jazyk_titulku Titulky_jazyk="czech" />
+  </Audio>
+  <Ovladani Ovladac="klavesnice">
+    <Pohyb>
+      <Pohyb_dopredu>W</Pohyb_dopredu>
+      <Pohyb_dozadu>S</Pohyb_dozadu>
+      <Pohyb_doprava>D</Pohyb_doprava>
+      <Pohyb_doleva>A</Pohyb_doleva>
+      <Vyskok>Mezerník</Vyskok>
+      <Kleknuti>C</Kleknuti>
+      <Lehnuti>Ctrl</Lehnuti>
+      <Sprint>Shift</Sprint>
+    </Pohyb>
+    <Akce>
+      <Strelba>LMB</Strelba>
+      <Zaostrit>RMB</Zaostrit>
+      <Prepnuti_vybavy>Num_1</Prepnuti_vybavy>
+      <Nuz>E</Nuz>
+      <Reload>R</Reload>
+      <Zoom>B</Zoom>
+      <Mapa>M</Mapa>
+    </Akce>
+    <Citlivost_mysi>60</Citlivost_mysi>
+    <Invertovat_mys>Ne</Invertovat_mys>
+    <Vibrace>Vypnuto</Vibrace>
+    <Profil_ovladani Profil="Zakladni" />
+  </Ovladani>
+  <Ostatni>
+    <Obtiznost>Lehka</Obtiznost>
+    <Napoveda>Vypnuto</Napoveda>
+    <Radar>Zapnuto</Radar>
+    <Automaticke_ukladani>Zapnuto</Automaticke_ukladani>
+  </Ostatni>
+  <Online_nastaveni>
+    <Hrac Id="239" Zeme="CZ" Status="Online">
+      <Nick>JN2587</Nick>
+      <Jmeno>Jan</Jmeno>
+      <Prijmeni>Novák</Prijmeni>
+      <Heslo>Heslo123</Heslo>
+      <Email>j.nov@email.com</Email>
+    </Hrac>
+    <Text_chat>Zapnuto</Text_chat>
+    <Mikrofon>Vypnuto</Mikrofon>
+    <Hodnoceni Uroven="16" Score="4586" Odehrano_hodin="57" />
+  </Online_nastaveni>
+</Konfigurace>
