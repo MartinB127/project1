@@ -1,0 +1,169 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Konfigurace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Video"/>
+        <xs:element ref="Audio"/>
+        <xs:element ref="Ovladani"/>
+        <xs:element ref="Ostatni"/>
+        <xs:element ref="Online_nastaveni"/>
+      </xs:sequence>
+       <xs:attribute name="Jazyk" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:element>
+<xs:element name="Video">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Rozliseni" type="xs:string"/>
+        <xs:element name="Display_mode">
+          <xs:simpleType>
+    		<xs:restriction base="xs:string">
+      			<xs:enumeration value="Fullscreen"/>
+      			<xs:enumeration value="Windowed"/>
+    		</xs:restriction>
+  		  </xs:simpleType>
+		</xs:element>
+        <xs:element name="Kvalita_vykreslovani" type="xs:string"/>
+        <xs:element name="Snimkova_frekvence" type="xs:string"/>
+        <xs:element name="Stiny">
+          <xs:simpleType>
+  			<xs:restriction base="xs:string">
+      			<xs:pattern value="zapnuto|vypnuto"/>
+    	    </xs:restriction>
+  		  </xs:simpleType>
+  		</xs:element>
+  		<xs:element name="Jas" type="xs:integer"/>
+  		<xs:element name="Kvalita_textur" type="xs:string"/>
+  		<xs:element name="Hloubka_ostrosti" type="xs:string"/>
+  		<xs:element name="Priblizeni_kamery" type="xs:integer"/>
+  		<xs:element name="MSAA" type="xs:integer"/>
+  		<xs:element name="VSYNC" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="Audio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Hlasitost_aplikace">
+  			<xs:simpleType>
+  				<xs:restriction base="xs:integer">
+  					<xs:minInclusive value="0"/>
+  					<xs:maxInclusive value="100"/>
+  				</xs:restriction>
+  			</xs:simpleType>
+  		</xs:element>
+        <xs:element name="Hlasitost_dialogu">
+          <xs:simpleType>
+  			<xs:restriction base="xs:integer">
+  				<xs:minInclusive value="0"/>
+  				<xs:maxInclusive value="100"/>
+  			</xs:restriction>
+  		  </xs:simpleType>
+  		</xs:element>
+        <xs:element name="Hlasitost_hudby">
+          <xs:simpleType>
+  			<xs:restriction base="xs:integer">
+  				<xs:minInclusive value="0"/>
+  				<xs:maxInclusive value="100"/>
+  			</xs:restriction>
+  		  </xs:simpleType>
+  		</xs:element>
+  		<xs:element name="Titulky" type="xs:string"/>
+      <xs:element name="Jazyk_titulku">
+      <xs:complexType>
+        <xs:attribute name="Titulky_jazyk" type="xs:string" use="required"/>
+      </xs:complexType>
+      </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="Ovladani">
+    <xs:complexType>
+      <xs:sequence>
+      	<xs:element name="Pohyb">
+      	  <xs:complexType>
+            <xs:sequence>
+            	 <xs:element name="Pohyb_dopredu" type="xs:string"/>
+            	 <xs:element name="Pohyb_dozadu" type="xs:string"/>
+            	 <xs:element name="Pohyb_doprava" type="xs:string"/>
+            	 <xs:element name="Pohyb_doleva" type="xs:string"/>
+            	 <xs:element name="Vyskok" type="xs:string"/>
+            	 <xs:element name="Kleknuti" type="xs:string"/>
+            	 <xs:element name="Lehnuti" type="xs:string"/>
+            	 <xs:element name="Sprint" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType> 
+        </xs:element>
+          <xs:element name="Akce">
+      	  <xs:complexType>
+            <xs:sequence>
+            	 <xs:element name="Strelba" type="xs:string"/>
+            	 <xs:element name="Zaostrit" type="xs:string"/>
+            	 <xs:element name="Prepnuti_vybavy" type="xs:string"/>
+            	 <xs:element name="Nuz" type="xs:string"/>
+            	 <xs:element name="Reload" type="xs:string"/>
+            	 <xs:element name="Zoom" type="xs:string"/>
+               <xs:element name="Mapa" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>     	
+      	</xs:element>  
+        <xs:element name="Citlivost_mysi" type="xs:integer"/>
+        <xs:element name="Invertovat_mys" type="xs:string"/>
+  		<xs:element name="Vibrace" type="xs:string"/>
+      <xs:element name="Profil_ovladani">
+      <xs:complexType>
+        <xs:attribute name="Profil" type="xs:string" use="required"/>
+      </xs:complexType>
+      </xs:element>
+      </xs:sequence>
+       <xs:attribute name="Ovladac" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:element>
+<xs:element name="Ostatni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Obtiznost"> 
+        <xs:simpleType>
+    		<xs:restriction base="xs:string">
+      			<xs:enumeration value="Lehka"/>
+      			<xs:enumeration value="Stredni"/>
+      			<xs:enumeration value="Tezka"/>
+    		</xs:restriction>
+  		  </xs:simpleType>
+  		  </xs:element> 
+        <xs:element name="Napoveda" type="xs:string"/>
+        <xs:element name="Radar" type="xs:string"/>
+        <xs:element name="Automaticke_ukladani" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="Online_nastaveni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Hrac">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nick" type="xs:string"/> 
+              <xs:element name="Jmeno" type="xs:string"/> 
+              <xs:element name="Prijmeni" type="xs:string"/> 
+              <xs:element name="Heslo" type="xs:string"/> 
+              <xs:element name="Email" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="Id" type="xs:string" use="required"/>
+            <xs:attribute name="Zeme" type="xs:string" use="required"/>
+            <xs:attribute name="Status" type="xs:string" use="required"/>
+          </xs:complexType> 
+        </xs:element>
+        <xs:element name="Text_chat" type="xs:string"/> 
+        <xs:element name="Mikrofon" type="xs:string"/> 
+        <xs:element name="Hodnoceni">
+        <xs:complexType>
+          <xs:attribute name="Uroven" type="xs:string" use="required"/>
+          <xs:attribute name="Score" type="xs:integer" use="required"/>
+          <xs:attribute name="Odehrano_hodin" type="xs:integer" use="required"/>
+        </xs:complexType>
+        </xs:element> 
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
